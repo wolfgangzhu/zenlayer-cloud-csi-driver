@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+* Controller flag `--openAPIDomain` and chart value `openAPIDomain` (default empty, which keeps the SDK default
+  `console.zenlayer.com`), for environments served by another OpenAPI domain.
 * Chart value `controllerEnabled` (default `true`). Set it to `false` to install only the node plugin when the
   controller runs outside the cluster; the controller RBAC is still installed.
 
