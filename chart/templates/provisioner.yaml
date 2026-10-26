@@ -1,3 +1,4 @@
+{{- if .Values.controllerEnabled }}
 ---
 kind: Deployment
 apiVersion: apps/v1
@@ -292,3 +293,4 @@ spec:
         - name: zec-secret
           secret:
             secretName: csi-access-key
+{{- end }}

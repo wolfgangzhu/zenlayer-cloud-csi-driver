@@ -1,3 +1,6 @@
+## Set to false when the controller runs outside this cluster (for example on a managed control plane):
+## only the node DaemonSet is installed, and the controller RBAC is kept for the external controller to use.
+controllerEnabled: true
 replicaCount: 3                 ## controller type csi Number of copies
 controllerSelectorkey: ""       ## controller type csi pod selector lable key. If you want to control the node where the pod is located 
 controllerSelectorval: ""       ## controller type csi pod selectot lable val. If you want to control the node where the pod is located
